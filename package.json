@@ -1,0 +1,22 @@
+{
+  "name": "unityscripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damiankaniewski/UnityScripts.git"
+  },
+  "author": "Damian Kaniewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damiankaniewski/UnityScripts/issues"
+  },
+  "homepage": "https://github.com/damiankaniewski/UnityScripts#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
