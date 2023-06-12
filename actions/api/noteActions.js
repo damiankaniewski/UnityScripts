@@ -36,11 +36,15 @@ class NoteActions {
         const body = req.body.body;
 
         const note = await Note.findOne({ _id: id });
-        note.title = title;
-        note.body = body;
-        await note.save();
-
-        res.status(201).json(note);
+        try{
+            note.title = title;
+            note.body = body;
+            await note.save();
+            res.status(201).json(note);
+        }catch(err){
+            return res.status(422).json({ message: err.message });
+        }
+        
     }
 
     async deleteNote(req,res){
